@@ -1,0 +1,151 @@
+<html>
+        <head>
+                <link rel="stylesheet" type = "text/css" href="nav_and_footer.css"> 
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Perspectives</title>
+        </head>
+        <body>
+                <!-- Top Nav -->
+                <header>
+                        <div class="navbar">
+                                <div class="logo">
+                                        <a href="index.html"><h1>Perspectives.</h1></a>
+                                </div>
+                        
+                                <div class="links normal-text">
+                                        <a href="collections.html">Collections</a>
+                                        <a href="about.html">About</a>
+                                        <a href="tickets.html">Visit</a>
+                                        <a href="support.html">Support Us</a>
+                                        <a class="menu" onclick="openNav() ">&#9776</a>
+                                </div> 
+                        </div> 
+                        <!-- mobile nav -->
+                        <div id="mobileNav" class="overlay ">
+                                <a class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content ">
+                                        <a href="collections.html">Collections</a>
+                                        <a href="about.html">About</a>
+                                        <a href="tickets.html">Visit</a>
+                                        <a href="support.html">Support Us</a>
+                                </div>
+                        </div>
+                        <script>
+                                /* Open when someone clicks on the span element */
+                                function openNav() {
+                                        document.getElementById("mobileNav").style.width = "100%";
+                                }
+        
+                                /* Close when someone clicks on the "x" symbol inside the overlay */
+                                function closeNav() {
+                                        document.getElementById("mobileNav").style.width = "0%";
+                                }
+                        </script>
+                </header>
+
+                <!-- <div style="margin-top: 100px; background-color: lightgray;">offset</div> -->
+
+                <!-- Footer -->
+<!--                 <footer>
+                        <div class="footer">
+                                <div class="footer-center-container">
+                                        <div class="footer-learn-more large-text">Learn more</div>
+                                        <div class="footer-buttons-container">
+                                                <a class="footer-button1 normal-text" href=".html">
+                                                        Contact Us
+                                                </a>
+                                                <a class="footer-button2 normal-text" href=".html">
+                                                        Blog
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
+                </footer> -->
+                
+                <!-- NEW FOOTER: -->
+                <!-- Footer -->
+                <footer>
+                        <div class="footer-title">
+                                <p>Learn more</p>
+                        </div>
+                        <div class="buttons">
+                                <button type="btn1"><a href="contact.html">Contact Us</button>
+                                <button type="btn2"><a href="blog.html">Blog</button>
+                        </div>
+                </footer>
+        </body>
+</html>
+
+
+
+
+
+
+
+
+<!-- 
+<html>
+<head>
+        <link rel="stylesheet" type = "text/css" href="style.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Perspectives </title>
+        <style type="text/css">
+                .left-box {
+                        width: 50%; 
+                        height: 100%
+                }
+                .right-box {
+                        width: 50%; 
+                        height: 100%
+                }
+                .overall-box {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        position: relative;
+                }
+        </style>
+</head>
+<!-- <br>
+        <h1> Perspectives </h1> -->
+<!-- <div class="navbar">
+        <div>
+                <a href="index.html"><h1>Perspectives</h1></a>
+        </div>
+        <div class="topnav">
+                <a href="about.html">About Us</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="collections.html">Collections</a>
+        </div> <br>
+</div> 
+ --> 
+
+
+<!-- <body>
+        <h2>blank</h2>
+        <div class="overall-box"> 
+                <div class="left-box" style="background-color: rgb(233, 232, 229)">
+                        <br><br>
+                        <h3> Our art gallery is dedicated to promoting and celebrating indigenous
+                             culture through the exhibition and sale of authentic and contemporary
+                             artworks created by indigenous artists. We strive to provide a platform
+                             that honors the rich traditions, histories, and voices of indigenous 
+                             peoples while creating a space for dialogue and understanding among
+                             diverse communities. Our goal is to foster an environment that encourages
+                             education, awareness, and appreciation of indigenous art and culture, and
+                             to support the livelihoods and economic empowerment of indigenous artists and communities.
+                        </h3>
+                </div>
+                <!-- The best picture -->
+                <!-- notes: make sure to fix the ratio and make sure it is universal -->
+<!--                 <div class="right-box" style="background-color: red">
+                        <img src="Warrior.jpeg" alt="Trulli" style="width: 100%;
+                        height: 100%;
+                        object-fit: cover;">
+                        <figcaption>Fig.1 - Warrior, Rose Simpson, Santa Clara, American, b. 1983.</figcaption>
+                </div>
+        </div> -->
+<!-- 
+</body> -->
+
+<!-- </html>  --
