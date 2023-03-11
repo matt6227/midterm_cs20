@@ -1,0 +1,52 @@
+.the_gian_section {
+    margin-top: 5%;
+    /* background-color: aqua; */
+}
+
+.about-us-section {
+    background-color: rgb(240, 240, 240);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+  }
+  
+  .founder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .founder {
+    text-align: center;
+  }
+  
+  .founder img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .founder h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .founder p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .text_for_mission {
+    font-size:20px;
+  }
