@@ -1,0 +1,78 @@
+/* styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  /* hide the normal navigation links */
+  .links.normal-text {
+    display: none;
+  }
+  /* show the menu icon */
+  .menu {
+    display: block;
+  }
+}
+
+/* styles for screens larger than 600px */
+@media only screen and (min-width: 600px) {
+  /* show the normal navigation links */
+  .links.normal-text {
+    display: block;
+  }
+  /* hide the menu icon */
+  .menu {
+    display: none;
+  }
+}
+
+
+
+.the_gian_section {
+    margin-top: 5%;
+    /* background-color: aqua; */
+}
+
+.about-us-section {
+    background-color: rgb(240, 240, 240);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+  }
+  
+  .founder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .founder {
+    text-align: center;
+  }
+  
+  .founder img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .founder h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .founder p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .text_for_mission {
+    font-size:20px;
+  }
