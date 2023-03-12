@@ -1,0 +1,187 @@
+<html>
+<head>
+    <link rel="stylesheet" type = "text/css" href="nav_and_footer.css">
+    <link rel="stylesheet" type = "text/css" href="reviews.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <script>
+        function validateForm() {
+            let lname = document.querySelector("input[name='lname']");
+            let rating = document.querySelector("select[name='rating']");
+
+            if (lname.value == "") {
+                alert("Please enter your last name");
+                return false;
+            } else if (rating.value == "") {
+                alert("Please rate your experience");
+                return false;
+            }
+            return true;
+        }
+
+    $(document).ready(function() {
+        $('#form').hide();
+        $('#write').on('click', function() {
+            $('#form').show();
+            $('#write').hide();
+        });
+		$('#submit').click(function(event) {
+            event.preventDefault();
+			let valid = validateForm();
+			if (valid) {
+				alert("Thank you for your review!")
+                $('#form').hide();
+            }
+		});
+	});
+    </script>
+</head>
+<body>
+    <!-- start Top Nav -->
+    <header>
+        <div class="navbar">
+                <div class="logo">
+                        <a href="index.html"><>Perspectives.</h1></a>
+                </div>
+
+                <div class="links normal-text">
+                        <a href="products.html">Products</a>
+                        <a href="about_us.html">About Us</a>
+                        <a href="contact_us.html">Contact Us</a>
+                        <a class="menu" onclick="openNav() ">&#9776</a>
+                </div>
+        </div>
+    <!-- end of Top Nav -->
+
+    <!-- mobile nav -->
+        <div id="mobileNav" class="overlay ">
+                <a class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content ">
+                        <a href="products.html">Products</a>
+                        <a href="about_us.html">About Us</a>
+                        <a href="contact_us.html">Contact Us</a>
+                </div>
+        </div>
+    <!-- end of mobile nav -->
+        <script>
+                /* Open when someone clicks on the span element */
+                function openNav() {
+                        document.getElementById("mobileNav").style.width = "100%";
+                }
+
+                /* Close when someone clicks on the "x" symbol inside the overlay */
+                function closeNav() {
+                        document.getElementById("mobileNav").style.width = "0%";
+                }
+        </script>
+    </header>
+    <br><h2>Reviews</h2>
+    <button class="write-review-button" id="write" style="font-family: 'Poppins';">Submit a Review</button>
+    <!-- Write a review form: -->
+    <form class="write-review" id="form">
+        <h3 style="margin-bottom: 5%;">Submit a Review:</h3>
+        <p class="userInfo"><label>First Name:</label> <input type="text"  name='fname' style="margin-left: 1%; font-family: 'Poppins';"/></p>
+        <p class="userInfo"><label>Last Name*:</label>  <input type="text"  name='lname' style="margin-left: 1%; font-family: 'Poppins';""/></p> <br>
+        <label> Did you return this item? </label>
+        <p>
+            <input type="radio"  name="r" value = "yes"/>Yes
+            <input type="radio"  name='r' value = 'no'/>No
+        </p> <br>
+        <label for="genre" class="label">Rate Experience*:</label>
+
+        <select name="rating" style="margin: 2%; font-family: 'Poppins';">
+            <option value="">Choose an Option</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <p class="userInfo"><label>Share Details of Your Experience:</label><br>
+            <textarea name="text" type="text" placeholder="Write something.." style="width: 90%; height: 15%; padding: 1%; margin: 2%; font-family: 'Poppins';"></textarea></p>
+        <br><br>
+
+        <button class="submit-review" id="submit">Submit</button>
+    </form>
+
+    <!-- table of reviews -->
+    <table class="review-table" style="max-height: 10%;">
+        <tr>
+            <td>
+                <div class="review">
+                    <div class="review-title">
+                        <h3>Great Quality!</h3>
+                        <div class="star-ratings">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                          </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Great quality clothing! I ordered my typical size and it fits as expected!</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="review">
+                    <div class="review-title">
+                        <h3>Color is great!</h3>
+                        <div class="star-ratings">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                          </div>
+                    </div>
+                    <div class="review-content">
+                        <p>The color is just as pictured! It's a perfect off-white that pairs well width
+                            everything else in my closet!</p>
+                        </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="review">
+                    <div class="review-title">
+                        <h3>Cannot Recommend Enough!</h3>
+                        <div class="star-ratings">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                          </div>
+                    </div>
+                    <div class="review-content">
+                        <p>I was in a rush to get nice quality clothing for a hiking trip in
+                            South America and I couldn't be happier with my purchase! I ordered
+                            the pants and the shirt and they are both great quality and fit perfectly!
+                            The material is very breathable and comfortable. I will definitely be
+                            ordering more from this company in the future!
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <div class="footer-title">
+                <p>Learn more</p>
+        </div>
+        <div class="buttons">
+            <button type="btn1"><a href="FQAs.html">FAQs</button>
+            <button type="btn2"><a href="reviews.html">Reviews</button>
+        </div>
+    </footer>
+</body>
+</html>
