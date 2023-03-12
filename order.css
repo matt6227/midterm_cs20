@@ -193,7 +193,6 @@
 /* circle burst animation */
 .animation-container
 {
-	z-index: 999;
 	position: absolute;
 	width: 750px;
 	height: 550px;
