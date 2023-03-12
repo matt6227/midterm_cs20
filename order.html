@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="order.css">
+                <link rel="stylesheet" type = "text/css" href="nav_and_footer.css"> 
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+                <title>Order</title>
+        </head>
+
+        <body>
+                <!-- Top Nav -->
+                <header>
+                        <div class="navbar">
+                                <div class="logo">
+                                        <a href="index.html"><h1>Perspectives.</h1></a>
+                                </div>
+                        
+                                <div class="links normal-text">
+                                        <a href="products.html">Products</a>
+                                        <a href="about_us.html">About Us</a>
+                                        <a href="contact_us.html">Contact Us</a>
+                                        <a class="menu" onclick="openNav() ">&#9776</a>
+                                </div> 
+                        </div> 
+                        <!-- mobile nav -->
+                        <div id="mobileNav" class="overlay ">
+                                <a class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content ">
+                                        <a href="products.html">Products</a>
+                                        <a href="about_us.html">About Us</a>
+                                        <a href="contact_us.html">Contact Us</a>
+                                </div>
+                        </div>
+                        <script>
+                                /* Open when someone clicks on the span element */
+                                function openNav() {
+                                        document.getElementById("mobileNav").style.width = "100%";
+                                }
+        
+                                /* Close when someone clicks on the "x" symbol inside the overlay */
+                                function closeNav() {
+                                        document.getElementById("mobileNav").style.width = "0%";
+                                }
+                        </script>
+                </header>
+
+
+
+                <!-- Main Content -->
+                <div class="main">
+                        <div class="container">
+                                <h1>
+                                        ORDER<br>SUCCESSFUL
+                                </h1>
+        
+                                <div class="animated-text">
+                                        <h2>Thank you!</h2>
+                                        <h2>MERCI!</h2>
+                                        <h2>Gracias!</h2>
+                                        <h2>Xièxiè!</h2>
+                                </div>
+                        </div>
+
+
+
+                        <!-- The confetti on the screen -->
+                        <div class="animation-container">
+                                <div class="burst">
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                        <div class="line"></div>
+                                </div>
+                        </div>
+
+                        <script type="text/javascript">
+                                function createBurst()
+                                {
+                                        let animContainer = document.querySelector('.animation-container');
+                                        let burst = document.querySelector('.burst');
+                
+                                        burst.style.top = Math.random() * 550 + 'px';
+                                        burst.style.left = Math.random() * 750 + 'px';
+                
+                                        let burstClone = burst.cloneNode(true);
+                                        animContainer.appendChild(burstClone);
+                
+                                        setTimeout(() => {
+                                                burstClone.remove();
+                                        }, 20000);
+                                }
+                                setInterval(createBurst, 2000);
+                        </script>
+                </div>
+
+
+
+
+                <!-- Footer -->
+                <footer>
+                        <div class="footer">
+                                <div class="footer-center-container">
+                                        <div class="footer-learn-more large-text">Learn more</div>
+                                        <div class="footer-buttons-container">
+                                                <a class="footer-button1 normal-text" href="FQAs.html">
+                                                        FAQs
+                                                </a>
+                                                <a class="footer-button2 normal-text" href="reviews.html">
+                                                        Reviews
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
+                </footer>
+        </body>
+</html>
