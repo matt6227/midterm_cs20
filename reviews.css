@@ -1,0 +1,101 @@
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    margin-bottom: 5%;
+}
+
+h2
+{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: #0F0D37;
+    padding: 2%;
+}
+
+h3 {
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #0F0D37;
+}
+
+.write-review-button
+{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+#form
+{
+    display: block;
+    text-align: left;
+    font-family: 'Poppins';
+    margin: 0 auto;
+    background-color: rgb(244, 243, 243);
+    padding: 3%;
+    padding-left: 6%;
+    width: 60%;
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 5px solid #0F0D37;
+}
+
+.submit-review
+{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 80px;
+    font-family: 'Poppins';
+}
+
+.review-table 
+{
+    width: 80%;
+    margin-bottom: 7%;
+}
+
+.review 
+{
+    font-family: 'Poppins';
+    color: #0F0D37;
+    padding: 2%;
+    margin: 1%;
+    background-color: rgb(244, 244, 244);
+}
+
+.star
+{
+    font-size: 20px;
+    border: 1px #0F0D37;
+    color: orange;
+}
+
+.review-title
+{
+    font-size: 18px;
+    margin-left: 3%;
+}
+
+.review-content 
+{
+    font-size: 16px;
+    margin-left: 3%;
+}

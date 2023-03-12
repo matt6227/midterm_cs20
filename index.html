@@ -1,0 +1,117 @@
+<html>
+        <head>
+                <link rel="stylesheet" type = "text/css" href="nav_and_footer.css"> 
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Perspectives</title>
+                <style>
+                        .content {
+                                height: 66%;
+                                display: flex;
+                                margin-top: 12vh;
+                                margin-left: 15%;
+                                margin-right: 15%;
+                                margin-bottom: 5%;
+                                overflow: auto;
+                        }
+
+                        @media screen and (max-width: 1000px) {
+                                .content {
+                                        display: block;
+                                }
+                        }
+
+                        .left-box {
+                                flex: 5;
+                        }
+                        .right-box {
+                                flex: 4; 
+                                border: 2px solid #0F0D37;
+                        }
+
+                        h2 {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 48px;
+                                
+                                line-height: 80px;
+
+                                color: #0F0D37;
+                        }
+                </style>
+        </head>
+        <body>
+                <!-- Top Nav -->
+                <header>
+                        <div class="navbar">
+                                <div class="logo">
+                                        <a href="index.html"><h1>Perspectives.</h1></a>
+                                </div>
+                        
+                                <div class="links normal-text">
+                                        <a href="products.html">Products</a>
+                                        <a href="about_us.html">About Us</a>
+                                        <a href="contact_us.html">Contact Us</a>
+                                        <a class="menu" onclick="openNav() ">&#9776</a>
+                                </div> 
+                        </div> 
+                        <!-- mobile nav -->
+                        <div id="mobileNav" class="overlay ">
+                                <a class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content ">
+                                        <a href="products.html">Products</a>
+                                        <a href="about_us.html">About Us</a>
+                                        <a href="contact_us.html">Contact Us</a>
+                                </div>
+                        </div>
+                        <script>
+                                /* Open when someone clicks on the span element */
+                                function openNav() {
+                                        document.getElementById("mobileNav").style.width = "100%";
+                                }
+        
+                                /* Close when someone clicks on the "x" symbol inside the overlay */
+                                function closeNav() {
+                                        document.getElementById("mobileNav").style.width = "0%";
+                                }
+                        </script>
+                </header>
+
+                <div class="content">
+                        <div class="left-box">
+                                <h2>Revolutionize<br>Your Wardrobe</h2>
+                                <p class="normal-text">with AI-Powered Fashion,<br>the Future of Fashion</p>
+                                <a class="footer-button2 normal-text" style="border-width: 2px; border-style: solid; border-color: #0F0D37;" href="reviews.html">
+                                        Discover Collection
+                                </a>
+                        </div>
+                        <br>
+                        <div class="right-box">
+                                <img style="height: 100%; width: 100%" src="img/Home_page.png" alt="">
+                        </div>
+                </div>
+                
+
+                <!-- Footer -->
+                <footer>
+                        <div class="footer">
+                                <div class="footer-center-container">
+                                        <div class="footer-learn-more large-text">Learn more</div>
+                                        <div class="footer-buttons-container">
+                                                <a class="footer-button1 normal-text" href="faqs.html">
+                                                        FAQs
+                                                </a>
+                                                <a class="footer-button2 normal-text" href="reviews.html">
+                                                        Reviews
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
+                </footer>
+        </body>
+</html>
+
+        
+
+        
+        
