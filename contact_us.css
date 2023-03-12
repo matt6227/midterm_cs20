@@ -10,6 +10,11 @@
     margin-bottom: 50px;
 }
 
+.title
+{
+    margin-top: 40px;
+}
+
 .form-container form
 {
     display: flex;
@@ -57,4 +62,15 @@
 .form-container form button[type=submit]:hover
 {
     background-color: #444;
+}
+
+
+
+/* Responsiveness: */
+@media only screen and (max-width: 767px)
+{
+    .body-container .title
+    {
+        font-size: 20px;
+    }
 }
