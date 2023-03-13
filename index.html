@@ -4,15 +4,66 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Perspectives</title>
                 <style>
-                        .content {
-                                height: 66%;
+                        .content 
+                        {
+                                height: auto;
+                                min-height: 66%;
                                 display: flex;
                                 margin-top: 12vh;
                                 margin-left: 15%;
                                 margin-right: 15%;
                                 margin-bottom: 5%;
-                                overflow: auto;
                         }
+
+
+
+                        .left-box h2
+                        {
+                                font-weight: bold;
+                                line-height: 60px;
+                                padding-top: 50px;
+                        }
+
+
+
+                        .discover-collection-text
+                        {
+                                font-size: 16px;
+                                width: 150px;
+                                border-width: 3px;
+                                border-color: white;
+                                border-style: solid;
+                                text-align: center;
+                                padding: 8px 24px;
+                                color: white;
+                                background-color: #0F0D37;
+                        }
+
+                        .discover-collection-text:hover {
+                                color: #0F0D37;
+                                background-color: white;
+                        }
+
+
+
+                        
+                        /* Phone size: */
+                        @media only screen and (max-width: 767px)
+                        {
+                                .left-box h2
+                                {
+                                        font-size: 32px;
+                                        font-weight: bold;
+                                        line-height: 40px;
+                                        padding-top: 50px;
+                                }
+                                .content
+                                {
+                                        margin-right: 100px;
+                                }
+                        }
+
+
 
                         @media screen and (max-width: 1000px) {
                                 .content {
@@ -25,7 +76,7 @@
                         }
                         .right-box {
                                 flex: 4; 
-                                border: 2px solid #0F0D37;
+                                /* border: 2px solid #0F0D37; */
                         }
 
                         h2 {
@@ -38,6 +89,7 @@
 
                                 color: #0F0D37;
                         }
+
                 </style>
         </head>
         <body>
@@ -81,13 +133,13 @@
                         <div class="left-box">
                                 <h2>Revolutionize<br>Your Wardrobe</h2>
                                 <p class="normal-text">with AI-Powered Fashion,<br>the Future of Fashion</p>
-                                <a class="footer-button2 normal-text" style="border-width: 2px; border-style: solid; border-color: #0F0D37;" href="products.html">
+                                <a class="discover-collection-text" style="border-width: 2px; border-style: solid; border-color: #0F0D37;" href="products.html">
                                         Discover Collection
                                 </a>
                         </div>
                         <br>
                         <div class="right-box">
-                                <img style="height: 100%; width: 100%" src="img/Home_page.jpg" alt="">
+                                <img style="height: auto; width: 100%" src="img/Home_page.jpg" alt="">
                         </div>
                 </div>
                 
