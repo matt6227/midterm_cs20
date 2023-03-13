@@ -4,13 +4,18 @@
     <link rel="stylesheet" type = "text/css" href="reviews.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Thomas Lai, Amanda Wu, Fortune Akinremi, Matthew Soto">
     <title>Reviews</title>
     <script>
         function validateForm() {
             let lname = document.querySelector("input[name='lname']");
+            let fname = document.querySelector("input[name='fname']");
             let rating = document.querySelector("select[name='rating']");
-
-            if (lname.value == "") {
+            if (fname.value == "") {
+                alert("Please enter your first name");
+                return false;
+            }
+            else if (lname.value == "") {
                 alert("Please enter your last name");
                 return false;
             } else if (rating.value == "") {
@@ -155,14 +160,14 @@
         <!-- Write a review form: -->
         <form class="write-review" id="form">
                 <h3 style="margin-bottom: 5%;">Submit a Review:</h3>
-                <p class="userInfo"><label>First Name:</label> <input type="text"  name='fname' style="margin-left: 1%; font-family: 'Poppins';"/></p>
+                <p class="userInfo"><label>First Name*:</label> <input type="text"  name='fname' style="margin-left: 1%; font-family: 'Poppins';"/></p>
                 <p class="userInfo"><label>Last Name*:</label>  <input type="text"  name='lname' style="margin-left: 1%; font-family: 'Poppins';"/></p> <br>
                 <label> Did you return this item? </label>
                 <p>
                 <input type="radio"  name="r" value = "yes"/>Yes
                 <input type="radio"  name='r' value = 'no'/>No
                 </p> <br>
-                <label for="genre" class="label">Rate Experience*:</label>
+                <label for="genre" class="label">Rate Experience* (1 = terrible and 5 = Phenomenal):</label>
 
                 <select name="rating" style="margin: 2%; font-family: 'Poppins';">
                 <option value="">Choose an Option</option>
