@@ -1,3 +1,17 @@
+.body-title-underline
+{
+    position: relative;
+    content: "";
+    border-bottom: 4px solid black;
+    width: 60%;
+    height: 1px;
+
+    margin-top: -50px;
+    margin-left: 43px;
+    margin-bottom: 35px;
+    border-radius: 20px;
+}
+
 .the_gian_section
 {
   margin-top: 10%;
