@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="authors" content="Thomas Lai, Amanda Wu, Fortune Akinremi, Matthew Soto">
     <title>Perspectives</title>
+    
+    <!-- maps api -->
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
+    type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
     <!-- start Top Nav -->
@@ -126,7 +136,8 @@
                         </div>
                 </div>
         </div>
+        <div style="width: 640px; height: 480px" id="mapContainer"></div>
 </footer>
-
+<script src="maps.js"></script>
 </body>
 </html>
