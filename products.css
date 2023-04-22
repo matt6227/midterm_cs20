@@ -39,7 +39,19 @@
 }
 
 
+/* code added below */
 
+  .quantity {
+    position: absolute;
+    bottom: 1;
+    right: 1;
+    margin: 1;
+    margin-top: 100%;
+    transform: translateY(-50%);
+
+  }
+
+/* code added above */
 
 .card
 {
@@ -173,9 +185,18 @@ img
 
        /* ADDED THIS */
        margin-top: -15px;
+ 
 }
 
+.quantity
+{
+       font-size: 14px;
 
+       /* ADDED THIS */
+       margin-top: -15px;
+       margin-right: 10px;
+    
+}
 
 
 .buy
