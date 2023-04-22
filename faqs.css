@@ -1,16 +1,38 @@
 
 /* Main Body */
-
 .main
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    margin-top: 12vh;
-    margin-bottom: 5%;
 }
 
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    margin-bottom: 10%;
+}
+
+
+.title-underline
+{
+  position: relative;
+  content: "";
+  border-bottom: 4px solid black;
+  width: 75%;
+  height: 1px;
+
+  margin-top: -50px;
+  margin-left: 15px;
+  margin-bottom: 75px;
+  border-radius: 20px;
+}
 
 
 
