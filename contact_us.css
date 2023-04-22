@@ -1,19 +1,28 @@
-
-
 .body-container
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 85px;
-    margin-bottom: 50px;
+    margin-top: 12vh;
+    margin-bottom: 5%;
 }
 
-.title
+
+.title-underline
 {
-    margin-top: 40px;
+    position: relative;
+    content: "";
+    border-bottom: 4px solid black;
+    width: 60%;
+    height: 1px;
+
+    margin-top: -50px;
+    margin-left: 43px;
+    margin-bottom: 55px;
+    border-radius: 20px;
 }
+
 
 .form-container form
 {
