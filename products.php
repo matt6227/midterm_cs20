@@ -55,16 +55,17 @@ Updated to incorporate database instead of hardcoding
                 $userid = "u4vb5tyqht0qg";
                 $pw = "grguujchdrjl";
                 $db= "dbzlnmvrlrbzov";
-
+                
                 /* Create connection */
                 $conn = new mysqli($server, $userid, $pw);
+           
                 /* Check connection */
+
                 if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
                 }
                 /* select collections */
                 $conn->select_db($db);
-                         
                 /* run a query with sorting */
                 $sort = isset($_GET['sort']) ? $_GET['sort'] : 'Default';
                 if ($sort == 'asc') {
@@ -74,9 +75,8 @@ Updated to incorporate database instead of hardcoding
                 } else {
                         $sql = "SELECT * FROM clothing_list";
                 }
-                $result = $conn->query($sql)
+                $result = $conn->query($sql);
 
-                // Title
                 echo "<div class='body-container'>";
                 echo "<div class='title'>";
                 echo "<p>Products</p>";
@@ -104,13 +104,6 @@ Updated to incorporate database instead of hardcoding
                 echo '>High to low</option>';
                 echo '</select>';
                 echo '</form>';
-
-                // Create container for cards
-                echo "<div class='body-container'>";
-                echo "<div class='title'>";
-                echo "<p>Products</p>";
-                echo "<div class='body-title-underline'></div>";
-                echo "</div>";
 
                 /* Display table */
 
