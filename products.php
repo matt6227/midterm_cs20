@@ -64,10 +64,46 @@ Updated to incorporate database instead of hardcoding
                 }
                 /* select collections */
                 $conn->select_db($db);
-                /* run a query */
-                $sql = "SELECT * FROM clothing_list";
-                $result = $conn->query($sql);
-                
+                         
+                /* run a query with sorting */
+                $sort = isset($_GET['sort']) ? $_GET['sort'] : 'Default';
+                if ($sort == 'asc') {
+                        $sql = "SELECT * FROM clothing_list ORDER BY price ASC";
+                } elseif ($sort == 'desc') {
+                        $sql = "SELECT * FROM clothing_list ORDER BY price DESC";
+                } else {
+                        $sql = "SELECT * FROM clothing_list";
+                }
+                $result = $conn->query($sql)
+
+                // Title
+                echo "<div class='body-container'>";
+                echo "<div class='title'>";
+                echo "<p>Products</p>";
+                echo "<div class='body-title-underline'></div>";
+                echo "</div>";
+
+                // Create dropdown filter
+                echo '<form method="GET" action="products.php">';
+                echo '<label for="sort">Sort by price:</label>';
+                echo '<select name="sort" onchange="this.form.submit()">';
+                echo '<option value="default"';
+                if ($sort == 'default') {
+                        echo ' selected';
+                }
+                echo '>Default</option>';
+                echo '<option value="asc"';
+                if ($sort == 'asc') {
+                        echo ' selected';
+                }
+                echo '>Low to high</option>';
+                echo '<option value="desc"';
+                if ($sort == 'desc') {
+                        echo ' selected';
+                }
+                echo '>High to low</option>';
+                echo '</select>';
+                echo '</form>';
 
                 // Create container for cards
                 echo "<div class='body-container'>";
@@ -75,8 +111,6 @@ Updated to incorporate database instead of hardcoding
                 echo "<p>Products</p>";
                 echo "<div class='body-title-underline'></div>";
                 echo "</div>";
-
-
 
                 /* Display table */
 
