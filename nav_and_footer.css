@@ -39,7 +39,7 @@ body {
         display: flex;
         align-items: center;
 
-        color: #0F0D37;   
+        color: #0F0D37;
 }
 
 .navbar {
@@ -125,16 +125,16 @@ body {
 }
 
 .footer-button1 {
-        background-color: white;
+        background-color: #0F0D37;
 }
 
 .footer-button2 {
-        background-color: #0F0D37;        
+        background-color: #0F0D37;
 }
 
 .footer-button1, .footer-button2 {
         width: 150px;
-        border-width: 3px;
+        border-width: 2px;
         border-color: white;
         border-style: solid;
         text-align: center;
@@ -142,14 +142,14 @@ body {
 }
 
 .footer-buttons-container {
-        display: flex; 
-        margin-bottom: 16px; 
+        display: flex;
+        margin-bottom: 16px;
         justify-content: center;
         gap: 30px;
 }
 
 .footer-button1 {
-        color: #000000;
+        color: white;
 }
 
 .footer-button2 {
@@ -185,10 +185,10 @@ a {
         a.menu {
                 display: none;
         }
-} 
+}
     /* mobile nav */
     /* The Overlay (background) */
-    
+
     .overlay {
         /* Height & width depends on how you want to reveal the overlay (see JS below) */
         height: 100%;
@@ -207,7 +207,7 @@ a {
         /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     }
     /* Position the content inside the overlay */
-    
+
     .overlay-content {
         position: relative;
         top: 25%;
@@ -217,7 +217,7 @@ a {
         /* 30px top margin to avoid conflict with the close button on smaller screens */
     }
     /* The navigation links inside the overlay */
-    
+
     .overlay a {
         padding: 8px;
         text-decoration: none;
@@ -228,13 +228,13 @@ a {
         transition: 0.3s;
         /* Transition effects on hover (color) */
     }
-    
+
     .overlay a:hover,
     .overlay a:focus {
         color: grey;
     }
     /* Position the close button (top right corner) */
-    
+
     .overlay .closebtn {
         position: absolute;
         top: 20px;
@@ -242,10 +242,10 @@ a {
         font-size: 50px;
         cursor: pointer;
     }
-    
+
     /* screen height < 450 pixels,
     font-size of the links and position the close button again, so they don't overlap */
-    
+
     @media screen and (max-height: 450px) {
         .overlay a {
             font-size: 20px
