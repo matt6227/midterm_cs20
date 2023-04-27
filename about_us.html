@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="authors" content="Thomas Lai, Amanda Wu, Fortune Akinremi, Matthew Soto">
     <title>Perspectives</title>
-    
+
     <!-- maps api -->
     <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
     type="text/javascript" charset="utf-8"></script>
@@ -15,6 +15,8 @@
     type="text/javascript" charset="utf-8"></script>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
     type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css"
+    href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
 </head>
 <body>
     <!-- start Top Nav -->
@@ -23,21 +25,21 @@
                 <div class="logo">
                         <a href="index.html"><h1>Perspectives.</h1></a>
                 </div>
-        
+
                 <div class="links normal-text">
-                        <a href="products.html">Products</a>
+                        <a href="products.php">Products</a>
                         <a href="about_us.html" class="active">About</a>
                         <a href="contact_us.html">Contact</a>
                         <a class="menu" onclick="openNav() ">&#9776</a>
                 </div>
-        </div> 
+        </div>
     <!-- end of Top Nav -->
 
     <!-- mobile nav -->
         <div id="mobileNav" class="overlay ">
                 <a class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content ">
-                        <a href="products.html">Products</a>
+                        <a href="products.php">Products</a>
                         <a href="about_us.html">About Us</a>
                         <a href="contact_us.html">Contact Us</a>
                 </div>
@@ -55,7 +57,7 @@
                 }
         </script>
     </header>
-        
+
         <!-- Use this if you need space between navigation bar and your content -->
         <!-- <div style="margin-top: 10%; background-color: lightgray;">offset</div> -->
 
@@ -64,7 +66,7 @@
                 <p>About</p>
                 <div class="body-title-underline"></div>
         </div>
-        
+
         <div class="about-us-section">
                 <div class="title">
                         <p>Our Founders</p>
@@ -108,15 +110,15 @@
             <br>
             <h2>Our Mission</h2>
             <p class="text_for_mission">
-                Our mission at Perspectives is to provide our customers with stylish, 
-                high-quality clothing that makes them feel confident and comfortable. We believe 
-                that fashion should be accessible to everyone, and we strive to offer a diverse 
-                range of styles and sizes to meet the needs of all our customers. 
+                Our mission at Perspectives is to provide our customers with stylish,
+                high-quality clothing that makes them feel confident and comfortable. We believe
+                that fashion should be accessible to everyone, and we strive to offer a diverse
+                range of styles and sizes to meet the needs of all our customers.
                 <br><br>
-                Through our commitment 
-                to sustainability and ethical business practices, we aim to make a positive impact on the 
-                environment and the communities we serve. At Perspectives, we are dedicated to 
-                creating a welcoming and inclusive shopping experience that fosters a sense of community 
+                Through our commitment
+                to sustainability and ethical business practices, we aim to make a positive impact on the
+                environment and the communities we serve. At Perspectives, we are dedicated to
+                creating a welcoming and inclusive shopping experience that fosters a sense of community
                 and empowers individuals to express their unique style.</p>
             <br>
             <br>
@@ -134,13 +136,14 @@
                                 <a class="footer-button1 normal-text" href="faqs.html">
                                         FAQs
                                 </a>
-                                <a class="footer-button2 normal-text" href="reviews.html">
+                                <a class="footer-button2 normal-text" href="reviews.php">
                                         Reviews
                                 </a>
                         </div>
                 </div>
         </div>
    </footer>
-<script src="maps.js"></script>
+<script src="maps.js" type="text/javascript" charset="utf-8"></script>
+
 </body>
 </html>
